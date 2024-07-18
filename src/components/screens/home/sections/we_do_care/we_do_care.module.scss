@@ -1,0 +1,74 @@
+.WeDoCareSection {
+  min-height: 100dvh;
+  padding: 0px 0 50px 0;
+  background-image: url("/crop_bg.jpg");
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+  overflow: hidden;
+  max-width: 100dvw;
+//   background-color: $color_g4;
+
+//   .sp {
+//     color: $color_g2;
+//   }
+
+//   .sp2{
+//     color: $color_g3;
+//   }
+
+  .overlay {
+    position: absolute;
+    background-color: rgba(0, 26, 1, 0.8);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .cont {
+    position: relative;
+    z-index: 10;
+
+    .top {
+      margin: 50px 0 40px 0;
+      color: white;
+
+      .topText {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        font-weight: 300;
+        font-size: 20px;
+        
+        p{
+          
+          // color: rgb(213, 213, 213,0.9);
+        }
+        h1 {
+          font-weight: 200;
+          font-size: 50px;
+
+          span {
+            color: #fdc229;
+          }
+        }
+      }
+
+      .topImg {
+        img {
+          border-radius: 20px;
+        }
+      }
+    }
+    padding-bottom: 50px;
+
+    button {
+        margin-top: 30px;
+   
+    }
+  }
+}

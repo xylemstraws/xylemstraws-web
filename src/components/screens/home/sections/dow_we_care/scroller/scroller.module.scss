@@ -1,0 +1,68 @@
+.VCard {
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  gap: 20px;
+  width: 250px;
+  margin: 30px 30px;
+  height: 450px;
+
+  img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: auto;
+  }
+
+  p {
+    font-weight: bold;
+    color: white;
+    margin: 15px 0;
+  }
+
+  small {
+    color: $color_g1;
+  }
+}
+
+
+
+
+
+.scroller {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+
+  &::-webkit-scrollbar{
+    display: none !important;
+  }
+
+  .scrollHolder {
+    display: flex;
+    align-items: center;
+    padding: 0 0 50px 0;
+    animation: scroll 250s infinite;
+    margin-top: 0px;
+  }
+
+  &:hover {
+    overflow-x: auto;
+    .scrollHolder {
+      animation-play-state: paused;
+    }
+  }
+}
+
+@keyframes scroll {
+  from {
+    transform: translate(0);
+  }
+
+  to {
+    transform: translate(-90%);
+  }
+}

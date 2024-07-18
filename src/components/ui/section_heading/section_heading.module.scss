@@ -1,0 +1,27 @@
+.sectionHeading {
+  text-align: center;
+  padding:20px 0px 0px 0px ;
+  z-index: 10;
+  position: relative;
+
+  h1 {
+    font-size: 55px;
+    font-weight: 200;
+  }
+  @include respond-below(md) {
+    h1 {
+      font-size: 40px;
+    }
+  }
+
+  &.v1 {
+    color: white;
+  }
+
+  &.v2{
+    color: white;
+  }
+  &.v3{
+    color: $color_g4;
+  }
+}

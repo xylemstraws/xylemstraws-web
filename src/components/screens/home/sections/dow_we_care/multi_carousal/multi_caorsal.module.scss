@@ -1,0 +1,26 @@
+.Carousel {
+  button[class*="react-multiple-carousel__arrow--left"] {
+    left: 0;
+  }
+  button[class*="react-multiple-carousel__arrow--right"] {
+    right: 0;
+  }
+
+  button[class*="react-multiple-carousel__arrow"] {
+    top: 180px;
+    z-index: 10;
+  }
+  @include respond-below(md) {
+    button[class*="react-multiple-carousel__arrow"] {
+      min-width: 25px !important;
+      min-height: 25px !important;
+
+
+      &::before {
+        font-size: 13px;
+      }
+    }
+
+ 
+  }
+}

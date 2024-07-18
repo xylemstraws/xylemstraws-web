@@ -1,0 +1,22 @@
+.DoWeCareSection {
+  position: relative;
+  overflow: hidden;
+  max-width: 100dvw;
+
+  width: 100vdw;
+  overflow: hidden;
+  .bg {
+    position: absolute;
+    background-image: url("/temp.webp");
+    background-size: cover;
+    background-position: right ;
+    opacity: 0.08;
+    width: 100vw;
+    height: 100dvh;
+    // z-index: -1;
+  }
+
+  height: 100dvh;
+  background-image: linear-gradient(#115f9b, #a33f6f);
+  // background-image: linear-gradient(#468585, #Def9c4);
+}

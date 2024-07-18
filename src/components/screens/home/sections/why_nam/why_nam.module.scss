@@ -1,0 +1,40 @@
+.WhyNamSection {
+//   height: 100vh;
+  background-color: #fafafa;
+  padding: 50px 0;
+  overflow: hidden;
+  max-width: 100vw;
+}
+
+.card{
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+   
+    // box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+    img{
+        border-radius: 20px;
+    }
+
+    h3{
+        color: $color_g4;
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    p{
+        color: gray;
+        font-size: 14px;
+    }
+
+    .img{
+        background-color: red;
+        height: 200px;
+        border-radius: 16px;
+        background-size: cover;
+        background-position: bottom;
+    }
+}

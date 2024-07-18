@@ -1,0 +1,65 @@
+.VCard {
+  width: 300px;
+  margin: 50px auto;
+  text-align: center;
+
+  .img {
+    border-radius: 20px;
+    overflow: hidden !important;
+    width: fit-content;
+    margin: auto;
+    img {
+      width: 280px;
+      height: 280px;
+      border-radius: 20px;
+      margin: auto;
+    }
+  }
+
+  &:hover {
+    .img {
+      img {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  p {
+    font-weight: 300;
+    color: white;
+
+    margin: 15px 0 5px 0;
+    font-size: 20px;
+  }
+
+  small {
+    color: $color_g1;
+    font-weight: 300;
+    font-size: 16px;
+  }
+}
+
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  //   white-space: nowrap;
+  width: 100%;
+  //   border: 1px solid #ccc;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.scroll-content {
+  display: flex;
+}
+
+// .card {
+//   display: inline-block;
+//   min-width: 200px;
+//   margin-right: 10px;
+//   padding: 20px;
+//   border: 1px solid #ccc;
+//   border-radius: 5px;
+//   background-color: #f9f9f9;
+//   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+// }

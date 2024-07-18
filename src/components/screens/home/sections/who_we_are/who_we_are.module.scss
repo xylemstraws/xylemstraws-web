@@ -1,0 +1,45 @@
+.WhoWeAreSection {
+  padding: 20px 0 70px 0;
+  max-width: 100dvw;
+  overflow: hidden;
+
+  gap: 3px;
+
+  h3 {
+    color: $color_g4;
+    font-weight: 400;
+  }
+
+  p {
+    color: $color_g3;
+    font-weight: 400;
+  }
+
+  a{
+    color: #161684;
+  }
+
+  .logos {
+    @include flexCenter;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .btn {
+    display: flex;
+    gap: 16px;
+  }
+
+  @include respond-below(lg) {
+    .logos {
+      margin-top: 50px;
+    }
+
+    .btn {
+      margin-top: 20px;
+      text-align: center;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}

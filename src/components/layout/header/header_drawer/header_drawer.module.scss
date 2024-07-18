@@ -1,0 +1,39 @@
+.c {
+ background-color: #28282B;
+}
+
+.head{
+  button{
+    background-color: white;
+  }
+}
+
+.body {
+  display: flex;
+  // justify-content: space-between;
+  gap: 50px;
+  flex-direction: column;
+  
+
+  height: 100%;
+  align-items: center;
+  nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 4px;
+    width: 100%;
+    a {
+      width: 100%;
+      padding: 10px;
+      font-size: 17px;
+      color: white;
+      &:hover,
+      &.active {
+        background-color: $color_g2;
+        color: white;
+        font-weight: 600;
+      }
+    }
+  }
+}

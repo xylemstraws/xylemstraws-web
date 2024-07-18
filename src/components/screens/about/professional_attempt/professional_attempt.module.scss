@@ -1,0 +1,12 @@
+.ProfessionalAttempt {
+  p {
+    font-weight: 300;
+    font-size: 18px;
+  }
+  button{
+    text-align: center;
+  }
+  @include respond-below(md) {
+    text-align: center;
+  }
+}
