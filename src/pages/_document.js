@@ -5,7 +5,7 @@ export default function Document() {
     <Html lang="en">
       
       <Head />
-      <title>Planat Life</title>
+      <title>Xylem Straws</title>
       <body >
         <Main />
         <NextScript />
