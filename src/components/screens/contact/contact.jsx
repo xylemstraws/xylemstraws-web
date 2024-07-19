@@ -27,11 +27,11 @@ const ContactScreen = () => {
             <div className={styles.details}>
               <div className={styles.det}>
                 <EnvelopeAtFill />
-                <p>admin@raidotaxi.com</p>
+                <p>connect@xylemstraws.com</p>
               </div>
               <div className={styles.det}>
                 <PhoneFill />
-                <p>+91 86677 91632</p>
+                <p>+91 99944 50006</p>
               </div>
               <div className={styles.det}>
                 <PinMapFill />
