@@ -1,0 +1,9 @@
+.wrap{
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+
+    .cert{
+        // border: 1px solid red;
+        @include flexCenter;
+    }
+}

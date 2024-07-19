@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./why_nam.module.scss";
 import CustomContainer from "@/components/ui/custom_container/custom_container";
 import { Col, Image, Row } from "react-bootstrap";
+import SectionHeading from "@/components/ui/section_heading/section_heading";
 
 const Card = ({ data }) => {
   const { title, text, img } = data;
@@ -82,6 +83,7 @@ const WhyNamSection = () => {
 
   return (
     <div className={styles.WhyNamSection} id="why_nam">
+      <SectionHeading heading='Advantages of Bio Plastic' variant={3}/>
       <CustomContainer>
         <div className={styles.wrap}>
           <Row>

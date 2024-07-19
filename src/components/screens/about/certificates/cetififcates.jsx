@@ -1,6 +1,7 @@
 import CustomButton from "@/components/ui/custom_button/custom_button";
 import React from "react";
 import { Col, Image, Row } from "react-bootstrap";
+import styles from './certificates.module.scss'
 
 const Certificates = () => {
   return (
@@ -13,8 +14,8 @@ const Certificates = () => {
       >
         Our Certifications
       </h2>
-      <Row data-aos="fade-up">
-        <Col xs={4} md={3} lg={2}>
+      <div data-aos="fade-up" className={styles.wrap}>
+      <div className={styles.cert}>
           <Image width={150}
             fluid
             src="https://cdn.prod.website-files.com/65a008783b7d11fc461fbf93/65ba3de88436713a5ff17b01_global-gap-logo.png"
@@ -23,8 +24,8 @@ const Certificates = () => {
             alt=""
             class="about-certifications_logo"
           />
-        </Col>
-        <Col xs={4} md={3} lg={2}>
+        </div>
+        <div className={styles.cert}>
           <Image width={150}
             fluid
             src="https://cdn.prod.website-files.com/65a008783b7d11fc461fbf93/65ba3c283f67328852546b39_grasp-logo.png"
@@ -33,8 +34,8 @@ const Certificates = () => {
             alt=""
             class="about-certifications_logo"
           />
-        </Col>
-        <Col xs={4} md={3} lg={2}>
+        </div>
+        <div className={styles.cert}>
           <Image width={150}
             fluid
             src="https://cdn.prod.website-files.com/65a008783b7d11fc461fbf93/65ba3c2a187cc1a749656c7e_sedex-logo.png"
@@ -43,8 +44,8 @@ const Certificates = () => {
             alt=""
             class="about-certifications_logo"
           />
-        </Col>
-        <Col xs={4} md={3} lg={2}>
+        </div>
+        <div className={styles.cert}>
           <Image width={150}
             fluid
             src="https://cdn.prod.website-files.com/65a008783b7d11fc461fbf93/65ba3d84a24e3c778417d753_fair-for-life-logo.png"
@@ -53,8 +54,8 @@ const Certificates = () => {
             alt=""
             class="about-certifications_logo"
           />
-        </Col>
-        <Col xs={4} md={3} lg={2}>
+        </div>
+        <div className={styles.cert}>
           <Image width={150}
             fluid
             src="https://cdn.prod.website-files.com/65a008783b7d11fc461fbf93/65ba3c288436713a5ff0717b_leaf-logo.png"
@@ -63,8 +64,8 @@ const Certificates = () => {
             alt=""
             class="about-certifications_logo"
           />
-        </Col>
-        <Col xs={4} md={3} lg={2}>
+        </div>
+        <div className={styles.cert}>
           <Image width={150}
             fluid
             src="https://cdn.prod.website-files.com/65a008783b7d11fc461fbf93/65ba3c6e269edaea68efbe0d_fda-logo.png"
@@ -73,8 +74,8 @@ const Certificates = () => {
             alt=""
             class="about-certifications_logo rain-forest"
           />
-        </Col>
-        <Col xs={4} md={3} lg={2}>
+        </div>
+        <div className={styles.cert}>
           <Image width={150}
             fluid
             src="https://cdn.prod.website-files.com/65a008783b7d11fc461fbf93/65ba3c20de187670479226bf_brc-logo.png"
@@ -83,8 +84,8 @@ const Certificates = () => {
             alt=""
             class="about-certifications_logo rain-forest"
           />
-        </Col>
-        <Col xs={4} md={3} lg={2}>
+        </div>
+        <div className={styles.cert}>
           <Image width={150}
             fluid
             src="https://cdn.prod.website-files.com/65a008783b7d11fc461fbf93/65ba3c28a220eb7bf40449ac_rainforest-alliance-logo.png"
@@ -93,8 +94,8 @@ const Certificates = () => {
             alt=""
             class="about-certifications_logo rain-forest"
           />
-        </Col>
-        <Col xs={4} md={3} lg={2}>
+        </div>
+        <div className={styles.cert}>
           <Image width={150}
             fluid
             src="https://cdn.prod.website-files.com/65a008783b7d11fc461fbf93/65ba3c2a6d5fd36af24389f3_usda-logo.png"
@@ -103,8 +104,8 @@ const Certificates = () => {
             alt=""
             class="about-certifications_logo rain-forest"
           />
-        </Col>
-        <Col xs={4} md={3} lg={2}>
+        </div>
+        <div className={styles.cert}>
           <Image width={150}
             fluid
             src="https://cdn.prod.website-files.com/65a008783b7d11fc461fbf93/65ba3c245dc6761a8b6590b2_eu-organic-logo.png"
@@ -113,8 +114,8 @@ const Certificates = () => {
             alt=""
             class="about-certifications_logo rain-forest"
           />
-        </Col>
-        <Col xs={4} md={3} lg={2}>
+        </div>
+        <div className={styles.cert}>
           <Image width={150}
             fluid
             src="https://cdn.prod.website-files.com/65a008783b7d11fc461fbf93/65ba3c2888eba8c9551b0556_india-organic-logo.png"
@@ -123,8 +124,8 @@ const Certificates = () => {
             alt=""
             class="about-certifications_logo rain-forest"
           />
-        </Col>
-        <Col xs={4} md={3} lg={2}>
+        </div>
+        <div className={styles.cert}>
           <Image width={150}
             fluid
             src="https://cdn.prod.website-files.com/65a008783b7d11fc461fbf93/65ba3c203d35f3d5e06262db_apeda-logo.png"
@@ -133,8 +134,8 @@ const Certificates = () => {
             alt=""
             class="about-certifications_logo rain-forest"
           />
-        </Col>
-        <Col xs={4} md={3} lg={2}>
+        </div>
+        <div className={styles.cert}>
           <Image width={150}
             fluid
             src="https://cdn.prod.website-files.com/65a008783b7d11fc461fbf93/65ba3c1f25713b605fd6ba51_aeo-logo.png"
@@ -143,8 +144,8 @@ const Certificates = () => {
             alt=""
             class="about-certifications_logo rain-forest"
           />
-        </Col>
-        <Col xs={4} md={3} lg={2}>
+        </div>
+        <div className={styles.cert}>
           <Image width={150}
             fluid
             src="https://cdn.prod.website-files.com/65a008783b7d11fc461fbf93/65ba3c2a9a52343a0824994f_star-export-logo.png"
@@ -153,8 +154,8 @@ const Certificates = () => {
             alt=""
             class="about-certifications_logo rain-forest"
           />
-        </Col>
-        <Col xs={4} md={3} lg={2}>
+        </div>
+        <div className={styles.cert}>
           <Image width={150}
             fluid
             src="https://cdn.prod.website-files.com/65a008783b7d11fc461fbf93/65ba3c21922143feb5095baa_cdb-logo.png"
@@ -163,8 +164,8 @@ const Certificates = () => {
             alt=""
             class="about-certifications_logo rain-forest"
           />
-        </Col>
-      </Row>
+        </div>
+      </div>
       <br />
 
       <div

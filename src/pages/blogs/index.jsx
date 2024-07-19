@@ -31,15 +31,17 @@ const BlogsPage = () => {
       img: "https://i.natgeofe.com/n/e96dfbe8-d136-4929-a49d-9559e4c09e74/01-history-of-straws-gettyimages-961156978.jpg?w=1436&h=958",
       author: "nationalgeographic.com",
     },
+
     {
-      id: "qowdomw",
-      title: "stronger-policies-to-end-plastic-pollution-on-national-drinking-straw-day",
+      id: "akamekf",
+      title: "More than 170 trillion plastic particles found in the ocean",
       description:
-        "On National Drinking Straw Day, I’m calling for stronger policies to end plastic pollution in National Parks—and beyond. Near the close of last year’s legislative session, a late night amendment in...",
-      href: "https://www.plasticpollutioncoalition.org/blog/2024/1/3/stronger-policies-to-end-plastic-pollution-on-national-drinking-straw-day",
-      img: "https://www.plasticpollutioncoalition.org/wp-content/uploads//plastic-lid-and-straw-on-forest-floor-licensed-adobe-stock.jpeg",
-      author: "plasticpollutioncoalition.org",
+        "The world's oceans are polluted by a “plastic smog” made up of an estimated 171 trillion plastic particles that if gathered would weigh around 2.3 million tons, according to a new study. A team of international...",
+      href: "https://edition.cnn.com/2023/03/08/world/ocean-plastic-pollution-climate-intl/index.html",
+      img: "https://media.cnn.com/api/v1/images/stellar/prod/230306124229-03-pacific-garbage-plastic.jpg?c=16x9&q=h_653,w_1160,c_fill/f_webp",
+      author: "edition.cnn.com",
     },
+
     {
       id: "qowdomw",
       title: "A small straw's big environmental impact - By worldwildlife.org",
@@ -48,6 +50,16 @@ const BlogsPage = () => {
       href: "https://www.worldwildlife.org/magazine/issues/summer-2018/articles/a-small-straw-s-big-environmental-impact",
       img: "https://files.worldwildlife.org/wwfcmsprod/images/takeaway_straws_summer2018.jpg/story_full_width/4cauhi21n9_takeaway_straws_summer2018.jpg",
       author: "worldwildlife.org",
+    },
+    {
+      id: "aocmal",
+      title:
+        "stronger-policies-to-end-plastic-pollution-on-national-drinking-straw-day",
+      description:
+        "On National Drinking Straw Day, I’m calling for stronger policies to end plastic pollution in National Parks—and beyond. Near the close of last year’s legislative session, a late night amendment in...",
+      href: "https://www.plasticpollutioncoalition.org/blog/2024/1/3/stronger-policies-to-end-plastic-pollution-on-national-drinking-straw-day",
+      img: "https://www.plasticpollutioncoalition.org/wp-content/uploads//plastic-lid-and-straw-on-forest-floor-licensed-adobe-stock.jpeg",
+      author: "plasticpollutioncoalition.org",
     },
   ];
 

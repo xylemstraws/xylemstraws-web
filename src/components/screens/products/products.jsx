@@ -27,13 +27,13 @@ const ProductsScreen = () => {
           <Row>
             <Col xs={12} md={6}>
               <div className={styles.img}>
-                <Image src="/assets/images/straw.jpg" alt="straw1" fluid />
+                <Image src="/assets/images/straw-straight.jpg" alt="straw1" fluid />
                 <p>Straight Straws</p>
               </div>
             </Col>
             <Col xs={12} md={6}>
               <div className={styles.img}>
-                <Image src="/assets/images/b-straw.webp" alt="straw1" fluid />
+                <Image src="/assets/images/straw-bent.jpg" alt="straw1" fluid />
                 <p>Bendable Straws</p>
               </div>
             </Col>

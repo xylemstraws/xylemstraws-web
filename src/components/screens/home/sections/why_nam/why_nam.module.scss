@@ -1,7 +1,7 @@
 .WhyNamSection {
 //   height: 100vh;
   background-color: #fafafa;
-  padding: 50px 0;
+  padding: 20px 0 50px 0;
   overflow: hidden;
   max-width: 100vw;
 }
@@ -21,13 +21,14 @@
 
     h3{
         color: $color_g4;
-        font-size: 18px;
+        font-size: 19px;
         font-weight: 400;
     }
 
     p{
         color: gray;
-        font-size: 14px;
+        font-size: 16px;
+        font-weight: 300;
     }
 
     .img{
