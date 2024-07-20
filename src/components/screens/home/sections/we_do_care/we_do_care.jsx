@@ -25,16 +25,16 @@ const WeDoCareSection = () => {
           <hr />
           <div className={styles.top}>
             <Row>
-              <Col xs={12} lg={4}>
+              <Col xs={12} lg={5}>
                 <div className={styles.topImg} data-aos="fade-right">
                   <Image
-                    src="/assets/images/granules.webp"
+                    src="/assets/images/granules2.jpg"
                     fluid
                     alt="eco-friendly-plastic"
                   />
                 </div>
               </Col>
-              <Col xs={12} lg={8}>
+              <Col xs={12} lg={7}>
                 <div className={styles.topText}>
                   <div data-aos="fade-left">
                     <h1 className={fonts.HeadFont}>

@@ -17,12 +17,12 @@ const ContactScreen = () => {
   return (
     <main className={styles.contactScreen}>
       <CustomContainer>
-        <SectionHeading heading='Contact Us' variant={3}/>
+        <SectionHeading heading="Let's Connect to Nature" variant={3}/>
         {/* <SectionHeading head="Contact Us" /> */}
         <div className={styles.box}>
           <div className={styles.info}>
             <h1>
-              Let&apos;s talk on something <span>great</span> together
+            We are here to help you care for Mother Earth
             </h1>
             <div className={styles.details}>
               <div className={styles.det}>
@@ -35,7 +35,7 @@ const ContactScreen = () => {
               </div>
               <div className={styles.det}>
                 <PinMapFill />
-                <p>Chennai, Coimbatore</p>
+                <p>Coimbatore</p>
               </div>
               {/* <Image src="/assets/png/yaja-animals.png" fluid width={300} alt='img' /> */}
             </div>

@@ -6,9 +6,10 @@
     width: 35px;
     height: 35px;
     @include flexCenter;
-    border: 2px solid $color_o2;
+    border: 2px solid white;
     border-radius: 50%;
     gap: 10px;
+
 
     &:hover {
       background-color: $color_g2;
@@ -20,7 +21,7 @@
   }
 
   img {
-    margin-bottom: 2px;
+    margin-bottom: 1px;
   }
 
   .twitter {

@@ -12,15 +12,18 @@ import ProfessionalAttempt from "./professional_attempt/professional_attempt";
 
 const AboutScreen = () => {
   return (
-    <div className={styles.AboutScreen}>
-      <br />
+    <div
+      className={styles.AboutScreen}
+      onContextMenu={(e) => {
+        e.preventDefault();
+      }}
+    >
       <SectionHeading heading="Who We Are?" variant={3} />
       <CustomContainer>
         {/* <br />
         <br />
         <AboutHead /> */}
-        <br />
-        <br />
+
         <OurStorySection />
         <br />
         <br />
@@ -33,8 +36,8 @@ const AboutScreen = () => {
         <MatureAttempt />
         <br />
         <ProfessionalAttempt />
-        <br/>
-        <br/>
+        <br />
+        <br />
       </CustomContainer>
     </div>
   );

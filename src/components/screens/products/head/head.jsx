@@ -19,11 +19,10 @@ const ProductHead = () => {
               <br />
 
               <p>
-                Our Products- Lorim ipsum content Our straws offer a sustainable
-                choice without compromising on quality. Enjoy your drinks with
-                confidence, knowing you are reducing plastic waste and
-                supporting a healthier planet. Ideal for any occasion, our
-                straws are both durable and compostable.
+                Our straws offer a sustainable choice without compromising on
+                quality. Enjoy your drinks with confidence, knowing you are
+                reducing plastic waste and supporting a healthier planet. Ideal
+                for any occasion, our straws are both durable and compostable.
               </p>
               <br />
               <CustomButton href="/contact">Enquire Now</CustomButton>
@@ -31,7 +30,7 @@ const ProductHead = () => {
           </Col>
           <Col xs={12} lg={4}>
             <div className={styles.right} data-aos="fade-left">
-              <Image src="/assets/images/granules2.jpg" alt="farm" fluid />
+              <Image src="/assets/images/granules.webp" alt="farm" fluid />
               <div>PHA Granules</div>
             </div>
             <br />

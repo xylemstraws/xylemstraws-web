@@ -49,10 +49,11 @@
 
 .char {
   margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
   .img1 {
     padding: 20px;
     display: flex;
-    justify-content: flex-end;
 
     img {
       width: 300px;
@@ -61,14 +62,18 @@
   }
   .img2 {
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 
     img {
-      width: 300px;
+      height: 400px;
       border-radius: 10px;
     }
   }
 
   @include respond-below(md) {
+    flex-direction: column;
     .img1 {
       img {
         width: 100%;
@@ -77,6 +82,7 @@
     .img2 {
       img {
         width: 100%;
+        height: auto;
       }
     }
   }

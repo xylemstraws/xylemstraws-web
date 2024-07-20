@@ -10,7 +10,7 @@ const BlogsPage = () => {
       description:
         "As we become increasingly aware of the environmental impacts of plastic pollution, finding sustainable alternatives has never been more crucial. One of the most...",
       href: "/blogs/The_Ultimate_Guide_to_Bioplastic_Straws_A_Sustainable_Solution_with_Xylem_Straws",
-      img: "/assets/images/straw.jpg",
+      img: "/assets/images/straw-bent.jpg",
       author: "xylemstraws.com",
     },
     {

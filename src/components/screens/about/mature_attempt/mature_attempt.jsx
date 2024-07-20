@@ -5,7 +5,10 @@ import CustomButton from "@/components/ui/custom_button/custom_button";
 
 const MatureAttempt = () => {
   return (
-    <div className={styles.MatureAttempt}>
+    <div
+      className={styles.MatureAttempt}
+      
+    >
       <h2
         style={{
           textAlign: "center",
@@ -39,20 +42,60 @@ const MatureAttempt = () => {
       </Row>
 
       <div className={styles.char}>
-        <Row>
-          <Col xs={12} md={6}>
-            <div className={styles.img1}>
-              <Image src="/assets/images/charcoal.jpg" alt="charcoal" fluid />
-            </div>
-          </Col>
-          <Col xs={12} md={6}>
-            <div className={styles.img2}>
-              <Image src="/assets/images/charcoal2.jpg" alt="charcoal" fluid />
-            </div>
-          </Col>
-        </Row>
+        <div className={styles.img1}>
+          <Image src="/assets/images/charcoal1.jpeg" alt="charcoal" fluid />
+        </div>
+        <div className={styles.img1}>
+          <Image src="/assets/images/charcoal2.jpeg" alt="charcoal" fluid />
+        </div>
+        <div className={styles.img1}>
+          <Image src="/assets/images/charcoal3.jpeg" alt="charcoal" fluid />
+        </div>
       </div>
 
+      <br />
+
+      <h2
+        style={{
+          textAlign: "center",
+        }}
+        data-aos="fade-up"
+      >
+        Gviro&apos;s Certifications
+      </h2>
+
+      <br />
+
+      <div className={styles.char}>
+        <div className={styles.img2}  data-aos="fade-left">
+          <Image
+            src="/assets/certificates/certificate1.jpeg"
+            alt="charcoal"
+            fluid
+          />
+          <p>
+            <br />
+            <strong>Tamilnadu State Startup Winner</strong>
+            <br />
+            <span>2022 in the Wealth out of Waste category</span>
+          </p>
+        </div>
+        <div className={styles.img2}  data-aos="fade-right">
+          <Image
+            src="/assets/certificates/certificate2.jpeg"
+            alt="charcoal"
+            fluid
+          />
+          <p>
+            <br />
+            <strong>National Startup Champion</strong>
+            <br />
+            <span>2023 in the Sustainability category</span>
+          </p>
+        </div>
+      </div>
+
+      <br />
       <div
         style={{
           textAlign: "center",

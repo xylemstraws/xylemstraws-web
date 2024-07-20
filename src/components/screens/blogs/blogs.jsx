@@ -37,7 +37,7 @@ const BlogCard = ({ data }) => {
 const BlogsScreen = ({ blogs }) => {
   return (
     <div className={styles.BlogsScreen}>
-      <SectionHeading heading="Blogs" variant={3} />
+      <SectionHeading heading="Worth Reading" variant={3} />
       <br />
       <CustomContainer>
         <Row>

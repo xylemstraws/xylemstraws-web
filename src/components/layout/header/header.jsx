@@ -12,23 +12,34 @@ import CustomButton from "@/components/ui/custom_button/custom_button";
 const Header = () => {
   const router = useRouter();
 
+  const isHome = router.pathname === "/";
+
   const [show, setShow] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      setScrolled(window.scrollY >window.innerHeight - 100 )
+      setScrolled(window.scrollY > 0);
     });
   }, []);
 
   return (
-    <header className={`${styles.header} ${scrolled ? styles.scrolled : ""}`}>
+    <header
+      className={`${styles.header} ${scrolled ? styles.scrolled : ""} ${
+        isHome ? styles.isHome : ""
+      }`}
+    >
       <HeaderDrawer setShow={setShow} show={show} router={router} />
       <CustomContainer>
         <div className={styles.wrap}>
           <div>
             <Link href="/">
-              {/* <Image src="/logo.png" alt="logo" fluid className={styles.logo} /> */}
+              <Image
+                src="/logo/logo_h.png"
+                alt="logo"
+                fluid
+                className={styles.logo}
+              />
             </Link>
           </div>
           <nav>

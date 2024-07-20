@@ -10,7 +10,7 @@ import Customized from "./customized/customized";
 const ProductsScreen = () => {
   return (
     <div className={styles.ProductsScreen}>
-      <SectionHeading heading="Our Products" variant={3} />
+      <SectionHeading heading="What We Do" variant={3} />
       <br />
       <ProductHead />
       <br />

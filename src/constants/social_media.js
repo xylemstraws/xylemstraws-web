@@ -7,18 +7,18 @@ const SOCIAL_MEDIA_LINKS = [
     name: "instagram",
     link: "/",
   },
-  {
-    name: "twitter",
-    link: "/",
-  },
+  // {
+  //   name: "twitter",
+  //   link: "/",
+  // },
   {
     name: "youtube",
     link: "/",
   },
-  {
-    name: "linkedin",
-    link: "/",
-  },
+  // {
+  //   name: "linkedin",
+  //   link: "/",
+  // },
 ];
 
 

@@ -1,22 +1,22 @@
 const PAGES = [
   {
-    name: "Home",
+    name: "The Home",
     href: "/",
   },
   {
-    name: "About",
+    name: "Who We Are",
     href: "/about",
   },
   {
-    name: "Products",
+    name: "What We Do",
     href: "/products",
   },
   {
-    name: "Blogs",
+    name: "Worth Reading",
     href: "/blogs",
   },
   {
-    name: "Contact",
+    name: "Connect to Nature",
     href: "/contact",
   },
 ];
