@@ -15,15 +15,15 @@ const CustomInput = ({
       className={styles.CustomInput}
       placeholder={placeholder}
       value={value}
-      onChange={onChange}
+      onChange={(e) => {
+        onChange(e, e.target.value);
+      }}
       required={required}
       type={type}
       max={max}
       maxLength={max}
-
       {...props}
     />
-    
   );
 };
 

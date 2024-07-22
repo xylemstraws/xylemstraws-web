@@ -51,7 +51,7 @@
 
 .toast {
   position: fixed;
-  bottom: 40px;
+  bottom: 100px;
   left: 50%;
   transform: translate(-50%, 0);
   z-index: 100;
@@ -62,5 +62,25 @@
     text-align: center;
     font-weight: 300;
     font-size: 16px;
+  }
+
+  &.show {
+    animation: fade 6s ease-out;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }

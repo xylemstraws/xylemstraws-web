@@ -3,6 +3,7 @@ import styles from "./why_nam.module.scss";
 import CustomContainer from "@/components/ui/custom_container/custom_container";
 import { Col, Image, Row } from "react-bootstrap";
 import SectionHeading from "@/components/ui/section_heading/section_heading";
+import Carousel from "react-multi-carousel";
 
 const Card = ({ data }) => {
   const { title, text, img } = data;
@@ -81,9 +82,27 @@ const WhyNamSection = () => {
     // },
   ];
 
+  const responsive = {
+    desktop: {
+      breakpoint: { max: 3000, min: 1200 },
+      items: 3,
+      slidesToSlide: 1, // optional, default to 1.
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 768 },
+      items: 2,
+      slidesToSlide: 1, // optional, default to 1.
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+      slidesToSlide: 1, // optional, default to 1.
+    },
+  };
+
   return (
     <div className={styles.WhyNamSection} id="why_nam">
-      <SectionHeading heading='Advantages of Bio Plastic' variant={3}/>
+      <SectionHeading heading="Advantages of Bio Plastic" variant={3} />
       <CustomContainer>
         <div className={styles.wrap}>
           <Row>
@@ -91,6 +110,47 @@ const WhyNamSection = () => {
               <Card key={c.id} data={c} />
             ))}
           </Row>
+        </div>
+
+        <div
+          style={{
+            position: "relative",
+          }}
+          className={styles.Carousel}
+        >
+          <Carousel
+            additionalTransfrom={0}
+            arrows
+            // autoPlay
+            // autoPlaySpeed={4000}
+            centerMode={false}
+            className=""
+            containerClass="container-with-dots"
+            dotListClass="dots"
+            draggable
+            focusOnSelect={false}
+            infinite
+            itemClass=""
+            keyBoardControl
+            minimumTouchDrag={50}
+            pauseOnHover={true}
+            renderArrowsWhenDisabled={false}
+            renderButtonGroupOutside={true}
+            renderDotsOutside
+            responsive={responsive}
+            rewind={false}
+            // rewindWithAnimation={false}
+            rtl={false}
+            shouldResetAutoplay
+            showDots={true}
+            sliderClass=""
+            slidesToSlide={1}
+            swipeable
+          >
+            {cards.map((c) => (
+              <Card key={c.id + "x"} data={c} />
+            ))}
+          </Carousel>
         </div>
       </CustomContainer>
     </div>

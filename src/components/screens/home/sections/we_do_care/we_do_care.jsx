@@ -52,7 +52,7 @@ const WeDoCareSection = () => {
                     <br />
                     <p>
                       Our extensive R&D efforts utilize agricultural by-products
-                      such as corn starch, sugarcane, and other renewable
+                      such as palm seed, soybean, sugarcane, and other renewable
                       resources. This ensures our straws are strong, flexible,
                       biodegradable, and compostable. Our approach significantly
                       mitigates the harmful effects of plastic pollution and

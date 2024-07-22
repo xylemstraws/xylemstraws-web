@@ -12,9 +12,9 @@ const WhoWeAreSection = () => {
       <SectionHeading heading="Who We Are?" variant={3} />
       <CustomContainer>
         <br />
-     
+
         <Row>
-          <Col xs={12} >
+          <Col xs={12}>
             <div data-aos="fade-left">
               {/* <h3>The Vashini Agro</h3> */}
               {/* <p>
@@ -50,8 +50,10 @@ const WhoWeAreSection = () => {
               </p>
               <br />
               <div className={styles.btn} data-aos="fade-up">
-                <CustomButton href='/about'>Know More About Us</CustomButton>
-                <CustomButton variant={2} href='/products'>Explore Our Products</CustomButton>
+                <CustomButton href="/about">Know More About Us</CustomButton>
+                <CustomButton variant={2} href="/products">
+                  Explore Our Products
+                </CustomButton>
               </div>
             </div>
           </Col>

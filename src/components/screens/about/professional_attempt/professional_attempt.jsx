@@ -32,7 +32,7 @@ const ProfessionalAttempt = () => {
           textAlign: "center",
         }}
       >
-        <CustomButton variant={2} href='/products'>Explore Our Range of Products</CustomButton>
+        <CustomButton variant={2} href='/products'>Let&apos;s Get into Detail</CustomButton>
       </div>
     </div>
   );

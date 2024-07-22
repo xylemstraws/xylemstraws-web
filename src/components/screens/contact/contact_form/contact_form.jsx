@@ -10,17 +10,19 @@ import { Check2Circle, CheckCircle } from "react-bootstrap-icons";
 const ContactForm = () => {
   const [showToast, setShowToast] = useState(null);
 
+  const initialValues = {
+    name: "",
+    email: "",
+    mobile: "",
+    message: "",
+  };
+
+  const [values, setValues] = useState(initialValues);
+
   return (
     <>
-      <div className={styles.toast}>
-        <Toast
-          show={showToast}
-          onClose={() => {
-            setShowToast(null);
-          }}
-          autohide
-          delay={5000}
-        >
+      <div className={`${styles.toast} ${showToast ? styles.show : ""}`}>
+        <Toast show={showToast} animation={false}>
           <Toast.Body>{showToast}</Toast.Body>
         </Toast>
       </div>
@@ -34,6 +36,10 @@ const ContactForm = () => {
               let&apos;s make a Greener Future
             </p>
           );
+          setValues(initialValues);
+          setTimeout(() => {
+            setShowToast(null);
+          }, 5990);
         }}
       >
         <div className={styles.tri} />
@@ -41,10 +47,42 @@ const ContactForm = () => {
         <h1>Say Us a Hello!</h1>
         <p>Let&apos;s discuss something Great.</p>
         <div className={styles.inps}>
-          <CustomInput placeHolder="Full Name*" required />
-          <CustomInput placeHolder="Email*" required type="email" />
-          <CustomInput placeHolder="Mobile Number*" required type="tel" />
-          <CustomTextArea placeholder="Message*" rows={3} required />
+          <CustomInput
+            placeHolder="Full Name*"
+            required
+            value={values.name}
+            onChange={(e, v) => {
+              console.log(v);
+              setValues((prev) => ({ ...prev, name: v }));
+            }}
+          />
+          <CustomInput
+            placeHolder="Email*"
+            required
+            type="email"
+            value={values.email}
+            onChange={(e, v) => {
+              setValues((prev) => ({ ...prev, email: v }));
+            }}
+          />
+          <CustomInput
+            placeHolder="Mobile Number*"
+            required
+            type="tel"
+            value={values.mobile}
+            onChange={(e, v) => {
+              setValues((prev) => ({ ...prev, mobile: v }));
+            }}
+          />
+          <CustomTextArea
+            placeholder="Message*"
+            rows={3}
+            required
+            value={values.message}
+            onChange={(e, v) => {
+              setValues((prev) => ({ ...prev, message: v }));
+            }}
+          />
           <CustomButton type="submit">Submit</CustomButton>
         </div>
       </form>

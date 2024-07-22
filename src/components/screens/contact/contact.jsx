@@ -35,7 +35,7 @@ const ContactScreen = () => {
               </div>
               <div className={styles.det}>
                 <PinMapFill />
-                <p>Coimbatore</p>
+                <p>Coimbatore, TN, India.</p>
               </div>
               {/* <Image src="/assets/png/yaja-animals.png" fluid width={300} alt='img' /> */}
             </div>

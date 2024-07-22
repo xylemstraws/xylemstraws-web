@@ -25,7 +25,9 @@
 
     .logo {
       width: 250px;
-  
+      // margin-left: -20px;
+      // background-color: red;
+
     }
 
     .btn {
@@ -46,10 +48,10 @@
     }
   }
 
-  &.isHome {
-    background-color: rgba(255, 255, 255, 0.4);
-    backdrop-filter: blur(10px);
-  }
+  // &.isHome {
+  //   background-color: rgba(255, 255, 255, 0.4);
+  //   backdrop-filter: blur(10px);
+  // }
 
   &.scrolled {
     background-color: transparent;

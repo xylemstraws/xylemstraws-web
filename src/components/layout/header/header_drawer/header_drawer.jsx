@@ -9,16 +9,23 @@ const HeaderDrawer = ({ show, setShow, router }) => {
   // const PAGES = []
 
   return (
-    <Offcanvas show={show} placement="end" className={styles.c}>
+    <Offcanvas show={show} placement="end" className={styles.c} 
+    onHide={()=>{
+      setShow(false);
+    }}
+    
+    >
       <Offcanvas.Header
         className={styles.head}
         closeButton
         onHide={() => {
           setShow(false);
-        }}
-        closeLabel="xxx"
+        }} 
+        
+        // closeLabel=""
       >
-        <Image src="/logo.png" alt="" fluid width={50} />
+        {/* <Image src="/logo/logo_h.png" alt="" fluid width={50} /> */}
+        <div></div>
       </Offcanvas.Header>
       <Offcanvas.Body>
         <div className={styles.body}>

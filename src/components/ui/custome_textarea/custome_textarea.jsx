@@ -7,14 +7,16 @@ const CustomTextArea = ({
   placeholder,
   value,
   onChange = () => {},
-  required
+  required,
 }) => {
   return (
     <textarea
       className={`${styles.CustomTextArea} ${styles[`v${variant}`]}`}
       rows={rows}
       value={value}
-      onChange={onChange}
+      onChange={(e) => {
+        onChange(e, e.target.value);
+      }}
       placeholder={placeholder}
       required={required}
     />

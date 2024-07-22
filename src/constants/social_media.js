@@ -1,11 +1,11 @@
 const SOCIAL_MEDIA_LINKS = [
   {
     name: "facebook",
-    link: "/",
+    link: "#",
   },
   {
     name: "instagram",
-    link: "/",
+    link: "#",
   },
   // {
   //   name: "twitter",
@@ -13,7 +13,7 @@ const SOCIAL_MEDIA_LINKS = [
   // },
   {
     name: "youtube",
-    link: "/",
+    link: "#",
   },
   // {
   //   name: "linkedin",

@@ -8,22 +8,22 @@ import { Dot, EnvelopeAt, Phone } from "react-bootstrap-icons";
 import SocialMedia from "@/components/social_media/social_media";
 
 const Footer = () => {
-
-
-
   return (
     <footer className={styles.footer}>
       <CustomContainer>
         <div className={styles.wrap}>
           <div className={styles.logo}>
             <Image src="/logo/logo_h.png" alt="logo" fluid />
-            <br/>
-            <br/>
+            <br />
+            <br />
           </div>
           <div className={styles.pages}>
-            {PAGES.map((p,i) => (
+            {PAGES.map((p, i) => (
               <p key={p.name} className={styles.links}>
-                <Link href={p.href}>{p.name}{i !== PAGES.length -1 && <span>|</span>}</Link>
+                <Link href={p.href}>
+                  {p.name}
+                  {i !== PAGES.length - 1 && <span>|</span>}
+                </Link>
               </p>
             ))}
           </div>
@@ -50,6 +50,10 @@ const Footer = () => {
           </div>
         </div>
         <hr />
+        <div className={styles.tc}>
+          <Link href="/terms-conditions">Terms & Conditions</Link>
+          <Link href="/privacy-policy">Privacy Policy</Link>
+        </div>
       </CustomContainer>
     </footer>
   );
