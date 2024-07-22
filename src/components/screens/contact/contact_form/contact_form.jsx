@@ -4,7 +4,8 @@ import styles from "./contact_form.module.scss";
 import CustomTextArea from "@/components/ui/custome_textarea/custome_textarea";
 import CustomButton from "@/components/ui/custom_button/custom_button";
 import { Toast } from "react-bootstrap";
-import { Check2Circle, CheckCircle } from "react-bootstrap-icons";
+import { Check2Circle, CheckCircle, XCircle } from "react-bootstrap-icons";
+import axios from "axios";
 // import CustomTextArea from "@/components/ui/custom_textarea/custom_textarea";
 
 const ContactForm = () => {
@@ -18,6 +19,7 @@ const ContactForm = () => {
   };
 
   const [values, setValues] = useState(initialValues);
+  const [isLoading,setIsLoading] = useState(false)
 
   return (
     <>
@@ -28,18 +30,40 @@ const ContactForm = () => {
       </div>
       <form
         className={styles.contactForm}
-        onSubmit={(e) => {
+        onSubmit={async (e) => {
           e.preventDefault();
-          setShowToast(
-            <p>
-              <CheckCircle /> &nbsp;Thank you for reaching out! Together,
-              let&apos;s make a Greener Future
-            </p>
-          );
-          setValues(initialValues);
-          setTimeout(() => {
-            setShowToast(null);
-          }, 5990);
+          setIsLoading(true)
+          try {
+            // throw new Error();
+            axios.post("https://formspree.io/f/meojeaee", {
+              email: values.email,
+              message: JSON.stringify(values),
+            });
+
+            setShowToast(
+              <p>
+                <CheckCircle /> &nbsp;Thank you for reaching out! Together,
+                let&apos;s make a Greener Future
+              </p>
+            );
+            setValues(initialValues);
+            setTimeout(() => {
+              setShowToast(null);
+            }, 5990);
+          } catch (err) {
+            console.log(err);
+
+            setShowToast(
+              <p>
+                <XCircle /> &nbsp;Something went wrong
+              </p>
+            );
+            setTimeout(() => {
+              setShowToast(null);
+            }, 5990);
+          }
+          setIsLoading(false)
+
         }}
       >
         <div className={styles.tri} />
@@ -83,7 +107,7 @@ const ContactForm = () => {
               setValues((prev) => ({ ...prev, message: v }));
             }}
           />
-          <CustomButton type="submit">Submit</CustomButton>
+          <CustomButton type="submit" isLoading={isLoading}>Submit</CustomButton>
         </div>
       </form>
     </>
