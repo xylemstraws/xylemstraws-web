@@ -56,7 +56,7 @@ const BlogsPage = () => {
       title:
         "stronger-policies-to-end-plastic-pollution-on-national-drinking-straw-day",
       description:
-        "On National Drinking Straw Day, I’m calling for stronger policies to end plastic pollution in National Parks—and beyond. Near the close of last year’s legislative session, a late night amendment in...",
+        "On National Drinking Straw Day, I’m calling for stronger policies to end plastic pollution in National Parks—and beyond. Near the close of last year’s legislative session, a late night amendment in..",
       href: "https://www.plasticpollutioncoalition.org/blog/2024/1/3/stronger-policies-to-end-plastic-pollution-on-national-drinking-straw-day",
       img: "https://www.plasticpollutioncoalition.org/wp-content/uploads//plastic-lid-and-straw-on-forest-floor-licensed-adobe-stock.jpeg",
       author: "plasticpollutioncoalition.org",
