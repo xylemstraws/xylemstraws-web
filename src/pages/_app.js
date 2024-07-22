@@ -10,7 +10,7 @@ import styles from "../styles/Home.module.scss";
 import fonts from "@/styles/fonts";
 import Layout from "@/components/layout/layout";
 import { SessionProvider } from "next-auth/react";
-// import { GoogleTagManager } from '@next/third-parties/google'
+import { GoogleTagManager } from '@next/third-parties/google'
 
 export default function App({ Component, pageProps }) {
   const [admin, setAdmin] = useState(null);
@@ -43,7 +43,7 @@ export default function App({ Component, pageProps }) {
         <main className={`${styles.main} ${fonts.MainFont}`}>
           <Layout>
             <Component {...pageProps} admin={admin} />
-            {/* <GoogleTagManager gtmId="G-4DH3LEDPXJ" /> */}
+            <GoogleTagManager gtmId="G-5J5WCQLL52" />
           </Layout>
         </main>
       </>
