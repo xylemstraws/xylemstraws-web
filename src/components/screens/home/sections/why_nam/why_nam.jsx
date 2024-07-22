@@ -47,7 +47,7 @@ const WhyNamSection = () => {
     {
       id: "c3",
       title: "Low Carbon Footprint",
-      text: "Production generates lower greenhouse gas emissions, reducing the impact on climate change.   ",
+      text: "Production generates lower greenhouse emissions, reducing the impact on climate change.   ",
       img: "windmill.jpg",
     },
     {
