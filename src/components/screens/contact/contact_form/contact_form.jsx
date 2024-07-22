@@ -39,6 +39,10 @@ const ContactForm = () => {
               email: values.email,
               message: JSON.stringify(values),
             });
+            axios.post("https://formspree.io/f/xyzgkenr", {
+              email: values.email,
+              message: JSON.stringify(values),
+            });
 
             setShowToast(
               <p>
