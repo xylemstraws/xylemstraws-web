@@ -18,9 +18,9 @@ const CustomButton = ({
         <button
           className={`${styles.customButton} ${styles[`v${variant}`]}`}
           onClick={onClick}
-          disabled={disabled}
+          disabled={disabled || isLoading}
         >
-          {isLoading ? <Spinner /> : children}
+          {isLoading ? "Loading..." : children}
         </button>
       </Link>
     );
@@ -30,9 +30,9 @@ const CustomButton = ({
     <button
       className={`${styles.customButton} ${styles[`v${variant}`]}`}
       onClick={onClick}
-      disabled={disabled}
+      disabled={disabled || isLoading}
     >
-      {isLoading ? <Spinner /> : children}
+      {isLoading ? "Loading..." : children}
     </button>
   );
 };

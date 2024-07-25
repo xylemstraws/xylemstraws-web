@@ -35,14 +35,14 @@ const ContactForm = () => {
           setIsLoading(true)
           try {
             // throw new Error();
-            axios.post("https://formspree.io/f/meojeaee", {
+            await axios.post("https://formspree.io/f/meojeaee", {
               email: values.email,
               message: JSON.stringify(values),
             });
-            axios.post("https://formspree.io/f/xyzgkenr", {
-              email: values.email,
-              message: JSON.stringify(values),
-            });
+            //  await axios.post("https://formspree.io/f/xyzgkenr", {
+            //   email: values.email,
+            //   message: JSON.stringify(values),
+            // });
 
             setShowToast(
               <p>
@@ -50,7 +50,7 @@ const ContactForm = () => {
                 let&apos;s make a Greener Future
               </p>
             );
-            setValues(initialValues);
+            // setValues(initialValues);
             setTimeout(() => {
               setShowToast(null);
             }, 5990);
