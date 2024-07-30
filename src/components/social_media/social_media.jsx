@@ -11,7 +11,7 @@ const SocialMedia = ({variant=1}) => {
       {SOCIAL_MEDIA_LINKS.map((link) => {
         return (
           <div key={link.name} className={styles[link.name]}>
-            {/* <Link href={link.link}> */}
+            <Link href={link.link} target="_blank">
               <Image
                 src={`/assets/svg/social/${link.name}.svg`}
                 alt={link.name}
@@ -20,7 +20,7 @@ const SocialMedia = ({variant=1}) => {
                   filter: cssToHex.hexToFilter(variant === 1 ? '#ffffff' : '#000000').color,
                 }}
               />
-            {/* </Link> */}
+            </Link>
           </div>
         );
       })}
