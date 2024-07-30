@@ -1,26 +1,16 @@
 const SOCIAL_MEDIA_LINKS = [
   {
     name: "facebook",
-    link: "#",
+    link: "https://www.facebook.com/profile.php?id=61563472653737",
   },
   {
     name: "instagram",
-    link: "#",
+    link: "https://www.youtube.com/@XylemStraws",
   },
-  // {
-  //   name: "twitter",
-  //   link: "/",
-  // },
   {
     name: "youtube",
-    link: "#",
+    link: "https://www.instagram.com/xylemstraws/?hl=en",
   },
-  // {
-  //   name: "linkedin",
-  //   link: "/",
-  // },
 ];
 
-
-
-export default SOCIAL_MEDIA_LINKS
+export default SOCIAL_MEDIA_LINKS;
