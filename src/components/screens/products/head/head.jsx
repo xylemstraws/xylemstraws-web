@@ -31,7 +31,7 @@ const ProductHead = () => {
           <Col xs={12} lg={4}>
             <div className={styles.right} data-aos="fade-left">
               <Image src="/assets/images/granules.webp" alt="farm" fluid />
-              <div>Bioplastic Granules</div>
+             
             </div>
             <br />
             <br />
